@@ -14,20 +14,24 @@
 #### على نظام التشغيل Linux و macOS
 ```bash
 python -m venv venv
-source venv/bin/activate```
+source venv/bin/activate
+```
 #### على نظام التشغيل Windows
 ```bash
 Copy code
 python -m venv venv
-.\venv\Scripts\activate```
+.\venv\Scripts\activate
+```
 ### 2. تثبيت المكتبات المطلوبة
 ```bash
 Copy code
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 ### 3. تشغيل التطبيق
 ```bash
 Copy code
-python run.py```
+python run.py
+```
 ## إخلاء مسؤولية
 تم تصميم هذا المشروع لأغراض تعليمية فقط. استخدام الثغرات الأمنية في CORS أو أي ثغرات أخرى ضد الأنظمة دون إذن صريح من أصحابها يعد غير قانوني وغير أخلاقي. المؤلف غير مسؤول عن أي استخدام غير قانوني أو ضار لهذه المعلومات.
 
