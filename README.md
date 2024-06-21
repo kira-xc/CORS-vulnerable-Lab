@@ -9,6 +9,15 @@
 
 ## خطوات التثبيت والاستخدام
 
+###  تحميل الاداة و دخول لها 
+
+```bash
+git clone https://github.com/kira-xc/CORS-vulnerable-Lab.git --depth 1
+```
+```bash
+cd CORS-vulnerable-Lab
+```
+
 ### 1. إنشاء وتفعيل البيئة الافتراضية
 
 #### على نظام التشغيل Linux و macOS
