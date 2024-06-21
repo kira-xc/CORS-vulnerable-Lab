@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ```bash
 python run.py
 ```
-## معلومات الدخول هي 
+## معلومات تسجيل الدخول هي 
 ```
 user@example.com
 password
