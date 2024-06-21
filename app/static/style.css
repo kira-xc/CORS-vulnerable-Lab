@@ -1,0 +1,82 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #28a745 !important;
+}
+
+.navbar .navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar .form-inline {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+/* تغيير خلفية ولون الزر Login */
+.navbar .login-btn.login {
+    background-color: #007bff; /* لون خلفية الزر */
+    border-color: #007bff; /* لون حدود الزر */
+    border-radius: 5px; /* حواف دائرية */
+}
+
+.navbar .login-btn.login:hover {
+    background-color: #0056b3; /* لون خلفية الزر عند التحويم */
+    border-color: #0056b3; /* لون حدود الزر عند التحويم */
+}
+
+.navbar .login-btn.login:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* تمييز عند التركيز */
+}
+
+/* تغيير خلفية ولون الزر Logout */
+.navbar .login-btn.logout {
+    background-color: #dc3545; /* لون خلفية الزر */
+    border-color: #dc3545; /* لون حدود الزر */
+    border-radius: 5px; /* حواف دائرية */
+}
+
+.navbar .login-btn.logout:hover {
+    background-color: #c82333; /* لون خلفية الزر عند التحويم */
+    border-color: #bd2130; /* لون حدود الزر عند التحويم */
+}
+
+.navbar .login-btn.logout:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); /* تمييز عند التركيز */
+}
+
+.navbar .login-btn .nav-link {
+    color: #ffffff !important; /* لون النص داخل الزر */
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.posts .card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+}
