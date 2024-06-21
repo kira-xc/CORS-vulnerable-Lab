@@ -18,18 +18,15 @@ source venv/bin/activate
 ```
 #### على نظام التشغيل Windows
 ```bash
-Copy code
 python -m venv venv
 .\venv\Scripts\activate
 ```
 ### 2. تثبيت المكتبات المطلوبة
 ```bash
-Copy code
 pip install -r requirements.txt
 ```
 ### 3. تشغيل التطبيق
 ```bash
-Copy code
 python run.py
 ```
 ## إخلاء مسؤولية
